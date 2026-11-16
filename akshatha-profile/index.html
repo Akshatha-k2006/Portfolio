@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akshatha K. | Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <nav class="nav container" id="nav">
+        <a class="brand" href="#home">Akshatha K.</a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#documents">Documents</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">HELLO, WELCOME TO MY PROFILE</p>
+            <h1>Hi, I'm <span class="accent-word">Akshatha K.</span></h1>
+            <p class="hero-subtitle">
+              Computer Science &amp; Engineering Student
+            </p>
+            <p class="hero-intro">
+              An enthusiastic Computer Science and Engineering student
+              passionate about technology, continuous learning and developing
+              meaningful solutions. I enjoy exploring new technologies,
+              strengthening my technical skills and gaining practical
+              experience.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#documents">
+                Explore My Biodata →
+              </a>
+              <a
+                class="btn btn-secondary"
+                href="assets/documents/resume.pdf"
+                download="Akshatha_K_Resume.pdf"
+                onclick="showToast('Your Resume download has started.')"
+              >
+                Download My Resume
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="photo-wrap">
+              <div class="photo-frame">
+                <img
+                  src="assets/images/profile.png"
+                  alt="Portrait of Akshatha K."
+                />
+              </div>
+              <div class="photo-chip">🎓 Class of 2028</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="section section-tint" id="about">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">About</p>
+            <h2>A Little About Me</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-intro">
+              <p>
+                I'm Akshatha K., a Computer Science and Engineering student from
+                Puttur, Karnataka. I'm currently pursuing my Bachelor of
+                Engineering at Vivekananda College of Engineering &amp;
+                Technology, with a growing interest in software and application
+                development.
+              </p>
+
+              <blockquote class="objective">
+                <span class="objective-label">Career Objective</span>
+                <p>
+                  To grow as a software developer and contribute to meaningful
+                  technology solutions through continuous learning, creativity
+                  and practical application of technical knowledge.
+                </p>
+              </blockquote>
+            </div>
+
+            <ul class="info-grid">
+              <li class="info-card">
+                <span class="info-icon">👤</span>
+                <span class="info-label">Full Name</span>
+                <span class="info-value">Akshatha K.</span>
+              </li>
+              <li class="info-card">
+                <span class="info-icon">🇮🇳</span>
+                <span class="info-label">Nationality</span>
+                <span class="info-value">Indian</span>
+              </li>
+              <li class="info-card">
+                <span class="info-icon">📍</span>
+                <span class="info-label">Location</span>
+                <span class="info-value">Puttur, Karnataka</span>
+              </li>
+              <li class="info-card">
+                <span class="info-icon">🎓</span>
+                <span class="info-label">Currently Pursuing</span>
+                <span class="info-value"
+                  >B.E. in Computer Science &amp; Engineering</span
+                >
+              </li>
+              <li class="info-card info-card-wide">
+                <span class="info-icon">✉️</span>
+                <span class="info-label">Email</span>
+                <a
+                  class="info-value info-link"
+                  href="mailto:akshathak006@gmail.com"
+                >
+                  akshathak006@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOCUMENTS SECTION -->
+      <section class="section" id="documents">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Documents</p>
+            <h2>My Documents</h2>
+          </div>
+
+          <div class="doc-grid">
+            <!-- Resume Card -->
+            <article class="card doc-card">
+              <div class="doc-icon">📄</div>
+              <h3>My Resume</h3>
+              <p>
+                Explore my academic background, technical skills, experience and
+                qualifications.
+              </p>
+              <div class="doc-actions">
+                <a
+                  class="btn btn-primary"
+                  href="assets/documents/resume.pdf"
+                  download="Akshatha_K_Resume.pdf"
+                  onclick="showToast('Your Resume download has started.')"
+                >
+                  Download Resume
+                </a>
+                <!-- Inside Resume Card -->
+                <button
+                  type="button"
+                  class="btn btn-ghost"
+                  onclick="
+                    openPreview('assets/documents/resume.pdf', 'My Resume')
+                  "
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+
+            <!-- Biodata Card -->
+            <article class="card doc-card">
+              <div class="doc-icon">🪪</div>
+              <h3>My Biodata</h3>
+              <p>
+                View my personal information, educational qualifications and
+                background.
+              </p>
+              <div class="doc-actions">
+                <a
+                  class="btn btn-primary"
+                  href="assets/documents/biodata.pdf"
+                  download="Akshatha_K_Biodata.pdf"
+                  onclick="showToast('Your Biodata download has started.')"
+                >
+                  Download Biodata
+                </a>
+                <!-- Inside Resume Card -->
+
+                <button
+                  type="button"
+                  class="btn btn-ghost"
+                  onclick="
+                    openPreview('assets/documents/biodata.pdf', 'My Biodata')
+                  "
+                >
+                  Preview
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-name">Akshatha K.</p>
+        <ul class="footer-links">
+          <li>
+            Email:
+            <a href="mailto:akshathak006@gmail.com">akshathak006@gmail.com</a>
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/Akshatha-K2006" target="_blank">
+              github.com/Akshatha-K2006
+            </a>
+          </li>
+        </ul>
+        <p class="footer-copy">
+          &copy; <span id="year">2026</span> Akshatha K. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top & Toast notification -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+    <div class="toast" id="toast"></div>
+
+    <!-- PDF PREVIEW MODAL -->
+    <div class="modal" id="pdf-modal" onclick="closePreview(event)">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h3 id="modal-title">Document Preview</h3>
+          <button type="button" class="modal-close" onclick="closePreview()">
+            ✕
+          </button>
+        </div>
+        <iframe id="pdf-frame" src="" title="Document Preview"></iframe>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
