@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata | Akshatha K.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="viewer-body">
+    <!-- TOP TOOLBAR -->
+    <header class="viewer-bar">
+      <div class="viewer-left">
+        <a class="btn btn-secondary btn-sm" href="index.html">← Back to Profile</a>
+        <span class="viewer-title">Personal Biodata (A4 Sheet)</span>
+      </div>
+
+      <div class="zoom-controls">
+        <button type="button" class="zoom-btn" id="zoom-out" title="Zoom Out">−</button>
+        <span class="zoom-label" id="zoom-level">100%</span>
+        <button type="button" class="zoom-btn" id="zoom-in" title="Zoom In">+</button>
+        <button type="button" class="zoom-btn" id="zoom-reset" title="Fit to Screen">Fit</button>
+      </div>
+
+      <a
+        class="btn btn-primary btn-sm"
+        href="assets/documents/biodata.pdf"
+        download="Akshatha_K_Biodata.pdf"
+      >
+        Download PDF
+      </a>
+    </header>
+
+    <!-- A4 VIEWPORT -->
+    <main class="a4-viewport" id="a4-viewport">
+      <div class="a4-scale-wrapper" id="a4-wrapper">
+        <article class="a4-sheet bio-sheet" id="a4-sheet">
+          <!-- HEADER -->
+          <div class="bio-header">
+            <p class="bio-doc-tag">PERSONAL BIODATA</p>
+            <h1>AKSHATHA K.</h1>
+          </div>
+
+          <!-- PERSONAL INFORMATION -->
+          <section class="bio-section">
+            <h2>PERSONAL INFORMATION</h2>
+            <table class="a4-bio-table">
+              <tr>
+                <th>Full Name</th>
+                <td>Akshatha K.</td>
+              </tr>
+              <tr>
+                <th>Date of Birth</th>
+                <td>02 December 2006</td>
+              </tr>
+              <tr>
+                <th>Gender</th>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <th>Marital Status</th>
+                <td>Single</td>
+              </tr>
+              <tr>
+                <th>Nationality</th>
+                <td>Indian</td>
+              </tr>
+              <tr>
+                <th>Languages Known</th>
+                <td>English, Kannada and Hindi</td>
+              </tr>
+              <tr>
+                <th>Place of Residence</th>
+                <td>Puttur, Dakshina Kannada, Karnataka</td>
+              </tr>
+            </table>
+          </section>
+
+          <!-- FAMILY INFORMATION -->
+          <section class="bio-section">
+            <h2>FAMILY INFORMATION</h2>
+            <table class="a4-bio-table">
+              <tr>
+                <th>Father's Name</th>
+                <td>Rajesh K</td>
+              </tr>
+              <tr>
+                <th>Father's Occupation</th>
+                <td>Auto Driver</td>
+              </tr>
+              <tr>
+                <th>Mother's Name</th>
+                <td>Usha Kumari</td>
+              </tr>
+              <tr>
+                <th>Mother's Occupation</th>
+                <td>Homemaker</td>
+              </tr>
+              <tr>
+                <th>Number of Siblings</th>
+                <td>2</td>
+              </tr>
+            </table>
+          </section>
+
+          <!-- PERSONAL PROFILE -->
+          <section class="bio-section">
+            <h2>PERSONAL PROFILE</h2>
+            <p class="bio-text">
+              I am self-motivated, adaptable and responsible, with a willingness to learn and improve.
+              I value honesty, continuous learning, dedication and creativity.
+            </p>
+
+            <div class="bio-sub">
+              <strong>Strengths</strong>
+              <div class="bio-pills">
+                <span>Self-motivated</span>
+                <span>Adaptable</span>
+                <span>Responsible</span>
+                <span>Willing to learn</span>
+              </div>
+            </div>
+
+            <div class="bio-sub">
+              <strong>Interests &amp; Hobbies</strong>
+              <p class="bio-text">
+                Technology, software development, UI/UX design, reading and dancing.
+              </p>
+            </div>
+          </section>
+
+          <!-- FUTURE ASPIRATION -->
+          <section class="bio-section">
+            <h2>FUTURE ASPIRATION</h2>
+            <p class="bio-text">
+              To become a skilled software developer and build meaningful technology solutions.
+            </p>
+          </section>
+
+          <!-- FOOTER NOTE -->
+          <footer class="bio-sheet-footer">
+            <p class="bio-disclaimer">
+              This document contains personal and family information. Share it only with trusted recipients.
+            </p>
+            <div class="bio-page-meta">
+              <span>PERSONAL BIODATA</span>
+              <span>Page 1</span>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

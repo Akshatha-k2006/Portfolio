@@ -615,3 +615,513 @@ a {
   height: 100%;
   border: none;
 }
+/* ==========================================================================
+   9. RESUME & BIODATA PAGES
+   ========================================================================== */
+.doc-nav-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.doc-nav-actions .btn {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.88rem;
+}
+
+.doc-page {
+  max-width: 820px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.paper-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.paper-card h2 {
+  font-size: 1.4rem;
+  color: var(--accent-text);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.paper-header {
+  text-align: center;
+}
+
+.paper-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.paper-subtitle {
+  color: var(--text-soft);
+  font-weight: 500;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+  font-size: 0.92rem;
+  color: var(--accent-text);
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Items */
+.resume-item {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.resume-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.resume-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.resume-item-head h3 {
+  font-size: 1.15rem;
+}
+
+.institution {
+  color: var(--accent-text);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.date-pill {
+  background: var(--blush);
+  color: var(--accent-text);
+  padding: 0.25rem 0.8rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.resume-meta {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+/* Skills & Tags */
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.skill-group h3 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-list li {
+  background: var(--soft-pink);
+  border: 1px solid var(--rose);
+  padding: 0.3rem 0.85rem;
+  border-radius: 99px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.simple-list {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.simple-list li::before {
+  content: "✓ ";
+  color: var(--accent-text);
+  font-weight: bold;
+}
+
+/* Biodata Table */
+.bio-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bio-table th,
+.bio-table td {
+  text-align: left;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid var(--soft-pink);
+}
+
+.bio-table th {
+  width: 38%;
+  color: var(--text-soft);
+  font-weight: 500;
+}
+
+.bio-table td {
+  font-weight: 500;
+}
+
+.privacy-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-table th,
+  .bio-table td {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+
+  .bio-table tr {
+    display: block;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--soft-pink);
+  }
+}
+/* ==========================================================================
+   9. A4 SHEET VIEWER (NO-SCROLL FIT + ZOOM)
+   ========================================================================== */
+.viewer-body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f4e6eb;
+}
+
+.viewer-bar {
+  height: 58px;
+  padding: 0 1.25rem;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-shrink: 0;
+  z-index: 20;
+}
+
+.viewer-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.viewer-title {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.btn-sm {
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+}
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--soft-pink);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.5rem;
+  border-radius: 99px;
+}
+
+.zoom-btn {
+  background: var(--white);
+  border: 1px solid var(--rose);
+  color: var(--accent-text);
+  font-weight: 600;
+  font-size: 0.85rem;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 0.5rem;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.zoom-btn:hover {
+  background: var(--blush);
+}
+
+.zoom-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  min-width: 44px;
+  text-align: center;
+  color: var(--text);
+}
+
+/* Viewport holds the scaled A4 page without scrolling at default fit */
+.a4-viewport {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.a4-scale-wrapper {
+  transform-origin: top center;
+  transition: transform 0.15s ease-out;
+}
+
+/* Exact A4 dimensions at 96 DPI (210mm x 297mm) */
+.a4-sheet {
+  width: 794px;
+  height: 1123px;
+  background: #ffffff;
+  color: #222222;
+  padding: 44px 52px;
+  box-shadow: 0 12px 36px rgba(56, 50, 56, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* ---- RESUME PDF EXACT LAYOUT ---- */
+.resume-sheet {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.48;
+}
+
+.res-header {
+  text-align: center;
+  border-bottom: 2px solid #222222;
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.res-header h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #111111;
+}
+
+.res-address {
+  font-size: 12.5px;
+  color: #444444;
+  margin-top: 2px;
+}
+
+.res-contact {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12.5px;
+  font-weight: 500;
+  margin-top: 4px;
+  color: #222222;
+}
+
+.res-section {
+  margin-bottom: 10px;
+}
+
+.res-section h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #111111;
+  border-bottom: 1.5px solid #333333;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.res-entry {
+  margin-bottom: 9px;
+}
+
+.res-entry:last-child {
+  margin-bottom: 0;
+}
+
+.res-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.res-date {
+  font-size: 12px;
+  color: #444444;
+  white-space: nowrap;
+}
+
+.res-sub {
+  font-size: 12.5px;
+  color: #333333;
+}
+
+.res-skills,
+.res-certs {
+  display: grid;
+  gap: 4px;
+  padding-left: 16px;
+  list-style: disc;
+}
+
+/* ---- BIODATA PDF EXACT LAYOUT ---- */
+.bio-sheet {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  border-top: 8px solid var(--primary);
+}
+
+.bio-header {
+  text-align: center;
+  border-bottom: 1.5px solid var(--rose);
+  padding-bottom: 12px;
+}
+
+.bio-doc-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--accent-text);
+  margin-bottom: 2px;
+}
+
+.bio-header h1 {
+  font-family: "Fraunces", serif;
+  font-size: 26px;
+  color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+.bio-section h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent-text);
+  background: var(--soft-pink);
+  padding: 5px 10px;
+  border-left: 3px solid var(--primary);
+  margin-bottom: 8px;
+}
+
+.a4-bio-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.a4-bio-table th,
+.a4-bio-table td {
+  text-align: left;
+  padding: 4.5px 10px;
+  border-bottom: 1px solid #f3e4e9;
+  font-size: 12.8px;
+}
+
+.a4-bio-table th {
+  width: 36%;
+  color: #555555;
+  font-weight: 600;
+}
+
+.a4-bio-table td {
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.bio-text {
+  padding: 0 10px;
+  color: #2b2b2b;
+}
+
+.bio-sub {
+  padding: 8px 10px 0;
+}
+
+.bio-sub strong {
+  display: block;
+  font-size: 12.5px;
+  color: var(--accent-text);
+  margin-bottom: 5px;
+}
+
+.bio-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.bio-pills span {
+  background: var(--soft-pink);
+  border: 1px solid var(--rose);
+  padding: 2px 10px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.bio-sheet-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.bio-disclaimer {
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+
+.bio-page-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-text);
+}
+
+@media (max-width: 640px) {
+  .viewer-title {
+    display: none;
+  }
+}

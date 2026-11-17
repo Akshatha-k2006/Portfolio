@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Akshatha K.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="viewer-body">
+    <!-- TOP TOOLBAR -->
+    <header class="viewer-bar">
+      <div class="viewer-left">
+        <a class="btn btn-secondary btn-sm" href="index.html"
+          >← Back to Profile</a
+        >
+        <span class="viewer-title">Resume (A4 Sheet)</span>
+      </div>
+
+      <div class="zoom-controls">
+        <button type="button" class="zoom-btn" id="zoom-out" title="Zoom Out">
+          −
+        </button>
+        <span class="zoom-label" id="zoom-level">100%</span>
+        <button type="button" class="zoom-btn" id="zoom-in" title="Zoom In">
+          +
+        </button>
+        <button
+          type="button"
+          class="zoom-btn"
+          id="zoom-reset"
+          title="Fit to Screen"
+        >
+          Fit
+        </button>
+      </div>
+
+      <a
+        class="btn btn-primary btn-sm"
+        href="assets/documents/resume.pdf"
+        download="Akshatha_K_Resume.pdf"
+      >
+        Download PDF
+      </a>
+    </header>
+
+    <!-- A4 VIEWPORT -->
+    <main class="a4-viewport" id="a4-viewport">
+      <div class="a4-scale-wrapper" id="a4-wrapper">
+        <article class="a4-sheet resume-sheet" id="a4-sheet">
+          <!-- HEADER -->
+          <div class="res-header">
+            <h1>AKSHATHA K</h1>
+            <p class="res-address">Manglore, DK -574202</p>
+            <div class="res-contact">
+              <span>akshathak006@gmail.com</span>
+              <span>|</span>
+              <span>github.com/Akshatha-K2006</span>
+              <span>|</span>
+              <span>+91 9019022261</span>
+            </div>
+          </div>
+
+          <!-- CAREER OBJECTIVE -->
+          <section class="res-section">
+            <h2>CAREER OBJECTIVE</h2>
+            <p>
+              Motivated Computer Science Engineering student seeking an
+              opportunity to apply my technical knowledge and problem-solving
+              skills in a professional environment. Eager to contribute to
+              real-world projects while continuously learning and developing my
+              skills in software and application development.
+            </p>
+          </section>
+
+          <!-- EDUCATION -->
+          <section class="res-section">
+            <h2>EDUCATION</h2>
+
+            <div class="res-entry">
+              <div class="res-row">
+                <strong>Bachelor of Engineering - Computer Science</strong>
+                <span class="res-date">Sep 2024 - Present</span>
+              </div>
+              <div class="res-row">
+                <span>Vivekananda College of Engineering &amp; Technology</span>
+                <span class="res-date">Sep 2024 - Sep 2028</span>
+              </div>
+              <p class="res-sub">
+                Major in Computer Science &amp; Engineering &nbsp;•&nbsp;
+                <strong>CGPA: 9.2/10</strong>
+              </p>
+            </div>
+
+            <div class="res-entry">
+              <div class="res-row">
+                <strong>Pre-University</strong>
+                <span class="res-date">Jun 2022 - Mar 2024</span>
+              </div>
+              <div class="res-row">
+                <span>St. Philomena PU College</span>
+                <span class="res-sub"
+                  >Combination of PCMB &nbsp;•&nbsp;
+                  <strong>87.5%</strong></span
+                >
+              </div>
+            </div>
+
+            <div class="res-entry">
+              <div class="res-row">
+                <strong>SSLC</strong>
+                <span class="res-date">Jun 2019 - Apr 2022</span>
+              </div>
+              <div class="res-row">
+                <span>St. Victor Girls' High School</span>
+                <span class="res-sub"
+                  >Karnataka Board &nbsp;•&nbsp; <strong>96.4%</strong></span
+                >
+              </div>
+            </div>
+          </section>
+
+          <!-- SKILLS -->
+          <section class="res-section">
+            <h2>SKILLS</h2>
+            <ul class="res-skills">
+              <li>
+                <strong>Programming Languages:</strong> Python, Java, C++, C
+              </li>
+              <li>
+                <strong>Web Technologies:</strong> HTML, CSS, JavaScript, Figma
+              </li>
+              <li>
+                <strong>Tools:</strong> Git, VS Code, MySQL, Android Studio
+              </li>
+              <li>
+                <strong>Soft Skills:</strong> Communication, Teamwork,
+                Leadership, Time Management
+              </li>
+            </ul>
+          </section>
+
+          <!-- PROFESSIONAL EXPERIENCE -->
+          <section class="res-section">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <div class="res-entry">
+              <div class="res-row">
+                <strong
+                  >Frontend Developer Intern, Aakanksha Charitable Trust</strong
+                >
+                <span class="res-date">Jun 2024 - Aug 2024</span>
+              </div>
+              <p>
+                Gained hands-on experience in mobile application development
+                using Flutter and Android Studio. Learned UI/UX design and
+                prototyping using Figma, along with Git and GitHub for version
+                control and project collaboration. Improved my problem-solving,
+                debugging, and development skills through practical project
+                work.
+              </p>
+            </div>
+          </section>
+
+          <!-- CERTIFICATIONS -->
+          <section class="res-section">
+            <h2>CERTIFICATIONS</h2>
+            <ul class="res-certs">
+              <li>
+                Infosys SpringBoard Data Structure &amp; Application - Course
+              </li>
+              <li>Infosys SpringBoard Linux OS - Course</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
